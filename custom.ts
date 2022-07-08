@@ -47,7 +47,28 @@ namespace MicroMint {
         
         game.showLongText(text, DialogLayout.Bottom)
 
+        pause(2000)
+
+
+        front.destroy()
+        front_person.destroy()
+        back_person.destroy()
+        back_person_bottom.destroy()
+
         
 
+    }
+    /**
+     * ERROR: This Function Is Used By Micro Mint. You Can Still Use It Though
+     */
+    //% block
+    export function Error(s: string): void {
+        game.ask("ERROR")
+
+        while (true) {
+
+            scene.setBackgroundColor(15)
+            game.splash("An Error Occured. Please Restart The Software.")
+        }
     }
 }
