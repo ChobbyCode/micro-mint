@@ -1,4 +1,4 @@
-
+game.splash("This Software Uses Micro Mint GitHub Edition Click A To Continue.")
 scene.setBackgroundColor(1)
 
 
@@ -20,10 +20,7 @@ enum MyEnum {
 //% weight=100 color=#0fbc11 icon=""
 namespace MicroMint {
     /**
-     * TODO: describe your function here
-     * @param n describe parameter here, eg: 5
-     * @param s describe parameter here, eg: "Hello"
-     * @param e describe parameter here
+     * Creates A Cutscene Using The Default People
      */
     //% block
     export function Cutscene(text: string): void {
@@ -36,6 +33,21 @@ namespace MicroMint {
         front_person.setScale(9, ScaleAnchor.Middle)
 
         front_person.setPosition(60,50)
+
+        let back_person = sprites.create(assets.image`front_person`, SpriteKind.Player)
+
+        back_person.setScale(3, ScaleAnchor.Middle)
+        back_person.setPosition(130, 50)
+
+        let back_person_bottom =sprites.create(assets.image`front_person_bottom`, SpriteKind.Player)
+
+        back_person_bottom.setScale(3, ScaleAnchor.Middle)
+        back_person_bottom.setPosition(130,70)
+
+        
+        game.showLongText(text, DialogLayout.Bottom)
+
+        
 
     }
 }

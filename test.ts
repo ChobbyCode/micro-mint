@@ -1,3 +1,2 @@
 // tests go here; this will not be compiled when this package is used as an extension.
-MicroMint.Cutscene("hi")
-MicroMint.Cutscene("hi")
+MicroMint.Cutscene("Hello Traveler!")
